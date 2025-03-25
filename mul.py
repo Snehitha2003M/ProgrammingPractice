@@ -13,7 +13,7 @@ b = [
     [7, 6, 0]
 ]
 
-c = [[0 for _ in range(col)] for _ in range(r)]
+c = [[0 for i in range(col)] for j in range(r)]
 
 print("Matrix A:")
 for i in range(r):
