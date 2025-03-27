@@ -1,3 +1,5 @@
+error: something went wrong
+warning: minor issue found
 gcc -c -Wall -g  amath.c
 amath.c: In function ‘get_factorial_value’:
 amath.c:12:9: warning: ‘i’ may be used uninitialized in this function [-Wmaybe-uninitialized]
