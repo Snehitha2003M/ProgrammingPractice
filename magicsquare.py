@@ -21,21 +21,20 @@ col = n // 2
 for i in range(1, n * n + 1):  
     a[row][col] = i  
 
-    prev_row, prev_col = row, col  
     row -= 1  
     col += 1  
 
     if row < 0 and col > n - 1:  
-        row = prev_row + 1  
-        col = prev_col  
+        row += 2  
+        col -= 1  
     elif row < 0:  
         row = n - 1  
     elif col > n - 1:  
         col = 0  
 
     if a[row][col] != 0:  
-        row = prev_row + 1  
-        col = prev_col  
+        row += 2  
+        col -= 1  
 
 print("\nMagic Square:")
 for i in range(n):
